@@ -1,0 +1,913 @@
+* {
+padding: 0;
+margin: auto;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color:#281F2B;
+}
+
+/*Tout ce qui se trouve ci-dessous fais partie de l'accueil*/
+#z{
+position: absolute;
+left: 20em;
+color: #ffffff00;
+}
+/*signe de balise de fond*/
+#signe-debbody{
+    position: absolute;
+    left: 20em;
+    top: 4em;
+    font-size: 1.1em;
+    color: #70707054;
+    font-family: URW Chancery L, cursive;
+}
+#signe-finhtml{
+    position: absolute;
+    left: 14em;
+    top: 2.3em;
+    font-size: 1.1em;
+    color: #70707054;
+    font-family: URW Chancery L, cursive;
+}
+#signe-debh1{
+    position: absolute;
+    left: 10.4em;
+    top: 13.7em;
+    font-size: 1.1em;
+    color: #70707054;
+    font-family: URW Chancery L, cursive;
+}
+#signe-finh1{
+    position: absolute;
+    left: 80em;
+    top: 28em;
+    font-size: 1.1em;
+    color: #70707054;
+    font-family: URW Chancery L, cursive;
+}
+#signe-debp{
+    position: absolute;
+    left: 12.5em;
+    top: 30em;
+    font-size: 1.1em;
+    color: #70707054;
+    font-family: URW Chancery L, cursive;
+}
+#signe-finp{
+    position: absolute;
+    left: 44em;
+    top: 32em;
+    font-size: 1.1em;
+    color: #70707054;
+    font-family: URW Chancery L, cursive;
+}
+
+
+
+
+
+/*Le rectangle de gauche avec le menu nav*/
+#rect-left{
+    height:44.7em;
+    width:10.375em;
+    background-color: #271F2A;
+    position: fixed;
+    top: 13.2em;
+    border: solid 1px #707070;
+    display: inline-block;
+}
+/*Le petit rectangle de gauche en haut du menu nav*/
+#rect-top-left{
+    height: 13.2em;
+    width:10.375em;
+    background-color: #423944;
+    position: fixed;
+    border: solid 1px #707070;
+    display: inline-block;
+}
+
+
+/*Ci-dessous les éléments dans le carré en haut à gauche*/
+#big_e{
+    text-decoration: underline;
+    color: #beb2b2 ;
+    font-size: 5.563em;
+    left: 0.6em;
+    position: fixed;
+    top: -0.1em;
+    transition: 1.0s;
+}
+#big_e:hover{
+    transform: scale(1.1) ;
+    transition: 0.2s;
+}
+#under_big_e{
+    font-family: Segoe UI;
+    color: #A497B1;
+    height:9.938em;
+    width:3.813em;
+    top: 6.1em;
+    position: fixed;
+    left: 4.1em;
+}
+#under_Elod{
+    position: fixed;
+    top: 9em;
+    color: #A497B1;
+    left: 2.1em;
+}
+/*Fin des éléments dans le carré en haut à gauche*/
+
+
+/*Texte centrale de la page d'accueil*/
+#center_text{
+    position: absolute;
+    font-size: 5em;
+    color: #beb2b2 ;
+    font-family: Georgia;
+    left: 2.8em;
+    top: 3em;
+    letter-spacing: 0.2em;
+}
+#under_center_text{
+    color:#847E7E ;
+    position: absolute;
+    font-size: 2em;
+    top: 17em;
+    left: 7.6em;
+    display:inline-block;
+}
+
+
+/*scrollers*/
+#scrollers{
+    position: fixed;
+    top: 51em;
+}
+#scrls1{
+    position: fixed;    
+    right: 2em;
+    writing-mode: vertical-rl;
+    text-orientation: inherit;
+    height: 6.4em;
+    color: white;
+}
+#scrls2{
+    position: fixed;
+    writing-mode: vertical-lr;
+    text-orientation: inherit;
+    height: 6.4em;
+    left: 11em;
+    color: white;
+}
+
+
+/*dessins de fond*/
+#tiret1{
+    position: absolute;
+    left: 80em;
+    width: 15em;
+    height: 25em;
+    top: 5em;
+    transform: rotate(-17deg);
+    transition: 1.0s;
+}
+#tiret2{
+    position: absolute;
+    left: 38em;
+    width: 15em;
+    height: 23em;
+    top: 34em;
+    transform: rotate(20deg);
+    transition: 1.0s;
+}
+#tiret3{
+    position: absolute;
+    left: 20em;
+    width: 15em;
+    height: 20em;
+    top: -1em;
+    transform: rotate(-3.5deg);
+    transition: 1.0s;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////fin de l'accueil///////////////////////////////////////////////////////////////////////*/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+
+/*En dessous de ce com il y a le style de la barre de nav pour toutes les catégories*/
+ul {
+    position: relative;
+    top: 8.5em;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.144);
+    opacity: 0.6;
+    border: solid 1px #707070;
+}
+
+/*modifier les texte liens exemple le style des mots qui sont dans le menu nav*/
+li a {
+    position: relative;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 0px;
+    text-decoration: none;
+    font-size: 26px;
+    font-family: Georgia;
+    border: solid 1px #707070;
+}
+
+/*le ":hover" permet de faire apparaître un bakc-color lorsque l'on passe sa souris
+  sur un des les éléments de la liste exemple sur accueil qui est dans la barre de nav*/
+li #a:hover {
+    background-color: #d2caca1e;
+}
+
+li #b:hover {
+    background-color: #d2caca1e;
+}
+
+li #c:hover {
+    background-color: #d2caca1e;
+}
+
+li #d:hover {
+    background-color: #d2caca1e;
+}
+
+li #e:hover {
+    background-color: #d2caca1e;
+}
+
+li #f:hover {
+    background-color: #d2caca1e;
+}
+
+#twitterLogo{
+    position: absolute;
+    top: 31em;
+    left: 4em;
+    width:20%;
+    text-align: center;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////début de about//////////////////////////////////////////////////////////////////////////*/
+/*Titre de la partie about*/
+#big-title-about{
+    border: solid 1px #707070;
+    height: 7em;
+    width: 108.4em;
+    top: 57.95em;
+    left: 10.4em;
+    position: absolute;
+}
+#ptitle-about{
+    position: absolute;
+    right: 7em;
+    font-size: 6em;
+    color: #beb2b2 ;
+    font-family: Georgia;
+    transition: 1.0s;
+}
+#ptitle-about:hover{
+    transform: scale(1.1) ;
+    transition: 0.2s;
+}
+
+/*texte centrale*/
+#ctn-txt-about1{
+    position: absolute;
+    left: 8.7em;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    top: 32em;
+    color: #beb2b2;
+    font-family: Georgia;
+}
+
+#ctn-txt-about2{
+    position: absolute;
+    left: 25.7em;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    top: 32.5em;
+    color: #beb2b2;
+    font-family: Georgia;
+}
+#ctn-about-pt2{
+    position: absolute;
+    left: 24.7em;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    top: 33.7em;
+    color: #beb2b2;
+    font-family: Georgia;
+}
+#ctn-about-pt3{
+    position: absolute;
+    left: 23.9em;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    top: 34.9em;
+    color: #beb2b2;
+    font-family: Georgia;
+}
+#ctn-about-pt4{
+    position: absolute;
+    left: 23.1em;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    top: 36.1em;
+    color: #beb2b2;
+    font-family: Georgia;
+}
+#ctn-about-pt5{
+    position: absolute;
+    left: 22.2em;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    top: 37.3em;
+    color: #beb2b2;
+    font-family: Georgia;
+}
+#ctn-about-pt6{
+    position: absolute;
+    left: 21.4em;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    top: 38.5em;
+    color: #beb2b2;
+    font-family: Georgia;
+}
+#ctn-about-pt7{
+    position: absolute;
+    left: 20.4em;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    top: 39.7em;
+    color: #beb2b2;
+    font-family: Georgia;
+}
+
+
+#below-ctn-about{
+    color:#847E7E ;
+    position: absolute;
+    font-size: 2em;
+    top: 53em;
+    left: 11em;
+}
+
+
+/*dessins de fond*/
+#tiret4-about{
+    position: absolute;
+    left: 42.5em;
+    width: 26em;
+    height: 23em;
+    top: 80em;
+    transform: rotate(1deg);
+}
+#tiret1-about{
+    position: absolute;
+    left: 85.5em;
+    width: 16em;
+    height: 30em;
+    top: 62em;
+    transform: rotate(-52deg);
+}
+
+
+/*signe de balise de fond*/
+#signe-debdivA{
+    position: absolute;
+    left: 18.4em;
+    top: 69.1em;
+    font-size: 1.1em;
+    color: #70707054;
+    font-family: URW Chancery L, cursive;
+}
+#signe-debpA1{
+    position: absolute;
+    left: 19.4em;
+    top: 71.1em;
+    font-size: 1.1em;
+    color: #70707054;
+    font-family: URW Chancery L, cursive;
+}
+#signe-debpA2{
+    position: absolute;
+    left: 59.4em;
+    top: 72.1em;
+    font-size: 1.1em;
+    color: #70707054;
+    font-family: URW Chancery L, cursive;
+}
+#signe-finpA1{
+    position: absolute;
+    left: 38.4em;
+    top: 83.1em;
+    font-size: 1.1em;
+    color: #70707054;
+    font-family: URW Chancery L, cursive;
+}
+#signe-finpA2{
+    position: absolute;
+    left: 82.4em;
+    top: 92.1em;
+    font-size: 1.1em;
+    color: #70707054;
+    font-family: URW Chancery L, cursive;
+}
+#signe-debpA3{
+    position: absolute;
+    left: 18.4em;
+    top: 95.1em;
+    font-size: 1.1em;
+    color: #70707054;
+    font-family: URW Chancery L, cursive;
+}
+#signe-finpA3{
+    position: absolute;
+    left: 53.4em;
+    top: 98.1em;
+    font-size: 1.1em;
+    color: #70707054;
+    font-family: URW Chancery L, cursive;
+}
+#signe-findivA{
+    position: absolute;
+    left: 86.4em;
+    top: 93.1em;
+    font-size: 1.1em;
+    color: #70707054;
+    font-family: URW Chancery L, cursive;
+}
+
+
+
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////fin de about//////////////////////////////////////////////////////////////////////////*/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+/*/////////////////////////////////////////////////////////////////////////////début de my skills//////////////////////////////////////////////////////////////////////////*/
+
+/*Titre de la partie mySkills*/
+#big-title-mySkills{
+    border: solid 1px #707070;
+    height: 7em;
+    width: 108.4em;
+    top: 115.9em;
+    left: 10.4em;
+    position: absolute;
+}
+#ptitle-mySkills{
+    position: absolute;
+    right: 7em;
+    font-size: 6em;
+    color: #beb2b2 ;
+    font-family: Georgia;
+    transition: 1.0s;
+}
+#ptitle-mySkills:hover{
+    transform: scale(1.1) ;
+    transition: 0.2s;
+}
+
+/*Texte du top de My skills*/
+#top-ctn-mySkills{
+    position: absolute;
+    top: 63.3em;
+    left: 9em;
+    font-size: 2em;
+    letter-spacing: 5px;
+    color: #aa73c149;
+    font-family: Georgia;
+}
+
+/*Texte centrale de My skills*/
+#ctn-txt-mySkills{
+    position: absolute;
+    left: 10.9em;
+    font-size: 2em;
+    letter-spacing: 3.6px;
+    top: 68.5em;
+    color: #beb2b2;
+    font-family: Georgia;
+}
+#ctn-txt-mySkills1{
+    position: absolute;
+    left: 33em;
+    font-size: 2em;
+    letter-spacing: 2px;
+    top: 68.5em;
+    color: #beb2b2;
+    font-family: Georgia;
+}
+
+#ctn-txt-mySkills2{
+    position: absolute;
+    left: 32em;
+    font-size: 2em;
+    letter-spacing: 2px;
+    top: 69.6em;
+    color: #beb2b2;
+    font-family: Georgia;
+}
+#ctn-txt-mySkills3{
+    position: absolute;
+    left: 31.3em;
+    font-size: 2em;
+    letter-spacing: 2px;
+    top: 70.7em;
+    color: #beb2b2;
+    font-family: Georgia;
+}
+#ctn-txt-mySkills4{
+    position: absolute;
+    left: 30.3em;
+    font-size: 2em;
+    letter-spacing: 2px;
+    top: 71.9em;
+    color: #beb2b2;
+    font-family: Georgia;
+}
+#ctn-txt-mySkills5{
+    position: absolute;
+    left: 29.5em;
+    font-size: 2em;
+    letter-spacing: 2px;
+    top: 73em;
+    color: #beb2b2;
+    font-family: Georgia;
+}
+#ctn-txt-mySkills6{
+    position: absolute;
+    left: 28.7em;
+    font-size: 2em;
+    letter-spacing: 2px;
+    top: 74.1em;
+    color: #beb2b2;
+    font-family: Georgia;
+}
+#ctn-txt-mySkills7{
+    position: absolute;
+    left: 27.9em;
+    font-size: 2em;
+    letter-spacing: 2px;
+    top: 75.3em;
+    color: #beb2b2;
+    font-family: Georgia;
+}
+#ctn-txt-mySkills8{
+    position: absolute;
+    left: 27.3em;
+    font-size: 2em;
+    letter-spacing: 2px;
+    top: 76.4em;
+    color: #beb2b2;
+    font-family: Georgia;
+}
+
+/*Texte en dessous du centre*/
+#below-ctn-mySkills{
+    color:#847E7E ;
+    position: absolute;
+    font-size: 2em;
+    top: 83em;
+    left: 6.5em;
+    transform: rotate(15deg)
+}
+
+/*dessins de fond*/
+#cercle-mySKills{
+    position: absolute;
+    left: 87.5em;
+    width: 13em;
+    height: 15em;
+    top: 123em;
+    transform: rotate(80deg);
+}
+#tiret4-mySkills{
+    position: absolute;
+    left: 40em;
+    width: 36em;
+    height: 9em;
+    top: 142em;
+    transform: rotate(143deg);
+}
+#tiret2-mySkills{
+    position: absolute;
+    left: 13em;
+    width: 39em;
+    height: 9em;
+    top: 163em;
+    transform: rotate(206deg);
+}
+
+
+
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////fin de my skills/////////////////////////////////////////////////////////////////////*/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+/*/////////////////////////////////////////////////////////////////////////////début de //////////////////////////////////////////////////////////////////////////*/
+
+/*Titre de la partie work*/
+#big-title-work{
+    border: solid 1px #707070;
+    height: 7em;
+    width: 108.4em;
+    top: 181.1em;
+    left: 10.4em;
+    position: absolute;
+}
+#ptitle-work{
+    position: absolute;
+    right: 6.7em;
+    font-size: 6em;
+    color: #beb2b2 ;
+    font-family: Georgia;
+    transition: 1.0s;
+}
+#ptitle-work:hover{
+    transform: scale(1.1) ;
+    transition: 0.2s;
+}
+
+/*Texte du top de work*/
+#top-ctn-work{
+    position: absolute;
+    top: 113.3em;
+    left: 38em;
+    font-size: 1.7em;
+    letter-spacing: 5px;
+    color: #aa73c149;
+    font-family: Georgia;
+    text-align: right;
+}
+
+/*Texte centrale de work*/
+#ctn-txt-work1{
+    position: absolute;
+    top: 132.3em;
+    left: 8em;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    color: #beb2b2;
+    font-family: Georgia;
+}
+#img-work1{
+    width: 23%;
+    height: 240px;
+    position: absolute;
+    left: 21.6em;
+    top: 202.5em;
+    border: solid 3px #868282;
+}
+#ctn-txt-work11{
+    position: absolute;
+    top: 218em;
+    left: 21.7em;
+    font-size: 1em;
+    letter-spacing: 5px;
+    color: #beb2b263;
+    font-family: Georgia;
+}
+#tiret4-work{
+    position: absolute;
+    left: 34em;
+    width: 35em;
+    height: 9em;
+    top: 205em;
+    transform: rotate(133deg);
+}
+#tiret3-work{
+    position: absolute;
+    left: 94.3em;
+    width: 15em;
+    height: 20em;
+    top: 236em;
+    transform: rotate(-3.5deg);
+    transition: 1.0s;
+}
+
+#ctn-txt-work2{
+    position: absolute;
+    top: 134.3em;
+    left: 52.8em;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    color: #beb2b2;
+    font-family: Georgia;
+    text-align: right;
+}
+#img-work2{
+    width: 31%;
+    height: 270px;
+    position: absolute;
+    left: 59.6em;
+    top: 203.6em;
+    border: solid 3px #868282;
+}
+#ctn-txt-work22{
+    position: absolute;
+    top: 221em;
+    left: 59.7em;
+    font-size: 1em;
+    letter-spacing: 5px;
+    color: #beb2b263;
+    font-family: Georgia;
+}
+
+#ctn-txt-work3{
+    position: absolute;
+    top: 149.3em;
+    left: 9.8em;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    color: #beb2b2;
+    font-family: Georgia;
+}
+#img-work3{
+    width: 31%;
+    height: 270px;
+    position: absolute;
+    left: 26.9em;
+    top: 226em;
+    border: solid 3px #868282;
+}
+#ctn-txt-work33{
+    position: absolute;
+    top: 243.5em;
+    left: 26.9em;
+    font-size: 1em;
+    letter-spacing: 5px;
+    color: #beb2b263;
+    font-family: Georgia;
+}
+
+#below-contener-work{
+    background-color:#70707036;
+    position: absolute;
+    top: 229.3em;
+    left: 70.8em;
+    width: 30em;
+    height: 15em;
+}
+#below-txt-work{
+    position: absolute;
+    font-size: 1.4em;
+    color: #beb2b2;
+    font-family: Georgia;
+    text-align: center;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////fin de work ////////////////////////////////////////////////////////////////////////*/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+/*/////////////////////////////////////////////////////////////////////////////début de contact //////////////////////////////////////////////////////////////////////////*/
+
+/*Titre de la partie contact*/
+#big-title-contact{
+    border: solid 1px #707070;
+    height: 7em;
+    width: 108.4em;
+    top: 251.1em;
+    left: 10.4em;
+    position: absolute;
+}
+#ptitle-contact{
+    position: absolute;
+    right: 7.1em;
+    font-size: 6em;
+    color: #beb2b2 ;
+    font-family: Georgia;
+    transition: 1.0s;
+}
+#ptitle-contact:hover{
+    transform: scale(1.1) ;
+    transition: 0.2s;
+}
+
+/*Texte du top de contact*/
+#top-ctn-contact{
+    position: absolute;
+    top: 144.3em;
+    left: 17.6em;
+    font-size: 1.8em;
+    letter-spacing: 5px;
+    color: #beb2b2;
+    font-family: Georgia;
+    text-align: center;
+}
+
+/*Texte centrale de contact*/
+#ctn-txt-contact{
+    position: absolute;
+    top: 180.3em;
+    left: 31.5em;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    color: #beb2b2;
+    font-family: Georgia;
+    text-align: center;
+}
+#mpro{
+    position: absolute;
+    top: 183.3em;
+    left: 36.7em;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    color: #beb2b2;
+    font-family: Georgia;
+    text-align: center;
+}
+#mcpnv{
+    position: absolute;
+    top: 185.3em;
+    left: 36.85em;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    color: #beb2b2;
+    font-family: Georgia;
+    text-align: center;
+}
+
+/*images*/
+#tiret4-contact{
+    position: absolute;
+    left: 4em;
+    width: 30em;
+    height: 9em;
+    top: 1.5em;
+    transform: rotate(235deg);
+}
+#tiret4-contact1{
+    position: absolute;
+    left: -30em;
+    width: 35em;
+    height: 9em;
+    top: -9em;
+    transform: rotate(53deg);
+}
+
+/*bande copyright d'en bas du site*/
+#copyright-band{
+    position: absolute;
+    top: 302.3em;
+    height: 7em;
+    width: 108.4em;
+    background-color: #2c2a2aaf;
+    left: 10.4em;
+}
+#txt-cp-band{
+    color: #ebeaec83;
+    position: absolute;
+    left: 48em;
+    top: 1.5em;
+}
+#txt-cp-band1{
+    color: #ebeaec83;
+    position: absolute;
+    left: 46.5em;
+    top: 4em;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////fin de contact ///////////////////////////////////////////////////////////////////////*/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+
+/*Media queries du site(à voir si à faire)*/
+/*
+@media screen and (min-width:1200px) and (max-width:1550px) {
+    
+}*/
